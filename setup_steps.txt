@@ -1,0 +1,30 @@
+Steps
+- install iTerm2
+	- https://iterm2.com/
+	- load in your keybindings
+- install brew
+	- https://brew.sh/
+- install ohmyzsh
+	- https://ohmyz.sh/#install
+    - update your ~/.zshrc
+- install xcode + developer tools
+	- xcode-select --install
+- install VSCode
+- install Sublime
+- install git
+	- https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+		- Create SSH key
+			- $ ssh-keygen -t ed25519 -C "your.email"
+		- start ssh agent 
+			- eval "$(ssh-agent -s)"
+		- create ssh config if necessary	
+			- vi ~/.ssh/config
+			- 	Host *
+  				AddKeysToAgent yes
+  				UseKeychain yes
+  				IdentityFile ~/.ssh/id_ed25519
+		- add ur ssh key
+			- $ ssh-add -K ~/.ssh/id_ed25519
+		- add it on github
+- install commitizen
+    - sudo pip3 install -U Commitizen
